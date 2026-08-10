@@ -1,0 +1,48 @@
+.wedding-footer {
+  background: var(--green-deep);
+  padding: 48px 0 28px;
+  color: #FFFFFF;
+}
+
+.footer-arabic {
+  font-family: var(--font-arabic);
+  font-size: 1.2rem;
+  color: var(--gold-light);
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.footer-dua-en {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 460px;
+  margin: 0 auto 16px;
+  line-height: 1.6;
+}
+
+.wedding-footer .divider::before,
+.wedding-footer .divider::after {
+  background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
+}
+
+.wedding-footer .divider-icon {
+  color: var(--gold-light);
+}
+
+.footer-names {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 12px;
+}
+
+.footer-names strong {
+  color: #FFFFFF;
+}
+
+.footer-copy {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.5px;
+}

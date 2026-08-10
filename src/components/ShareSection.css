@@ -1,0 +1,83 @@
+.share-section {
+  background: var(--bg-section-alt);
+}
+
+.share-card {
+  padding: 36px 24px;
+  border-color: var(--green-deep);
+}
+
+.share-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.share-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 24px;
+  background: #25D366;
+  color: #FFFFFF;
+  border: none;
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:active {
+  background: #1DA851;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+}
+
+.wa-icon {
+  display: flex;
+  align-items: center;
+}
+
+.btn-copy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 24px;
+  background: transparent;
+  color: var(--green-deep);
+  border: 1.5px solid var(--green-deep);
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-copy:hover,
+.btn-copy:active {
+  background: var(--green-light);
+}
+
+@media (min-width: 500px) {
+  .share-btns {
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: center;
+  }
+}

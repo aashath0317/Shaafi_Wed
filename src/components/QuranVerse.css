@@ -1,0 +1,79 @@
+.quran-section {
+  padding: 50px 0;
+  background: var(--green-mist);
+}
+
+.quran-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1.5px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 36px 24px;
+  box-shadow: var(--shadow-md);
+}
+
+/* Corner ornaments */
+.quran-corner {
+  position: absolute;
+  color: var(--gold);
+  font-size: 1.3rem;
+  opacity: 0.5;
+}
+
+.quran-corner-tl { top: 12px; left: 14px; transform: rotate(-45deg); }
+.quran-corner-tr { top: 12px; right: 14px; transform: rotate(45deg); }
+.quran-corner-bl { bottom: 12px; left: 14px; transform: rotate(-135deg); }
+.quran-corner-br { bottom: 12px; right: 14px; transform: rotate(135deg); }
+
+/* Arabic text */
+.quran-arabic {
+  font-family: var(--font-arabic);
+  font-size: 1.35rem;
+  color: var(--green-deep);
+  line-height: 2;
+  margin-bottom: 16px;
+  direction: rtl;
+}
+
+/* Divider */
+.quran-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 16px auto;
+  width: 180px;
+}
+
+.qd-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.qd-dot {
+  color: var(--gold);
+  font-size: 0.8rem;
+}
+
+/* English translation */
+.quran-english {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-body);
+  line-height: 1.7;
+  margin-bottom: 14px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quran-ref {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  color: var(--gold);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}

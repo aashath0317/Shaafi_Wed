@@ -1,0 +1,139 @@
+.dua-section {
+  background: var(--green-mist);
+}
+
+.dua-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Form Card */
+.dua-form-card {
+  text-align: left;
+}
+
+.dua-form-title,
+.dua-wall-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--text-heading);
+  margin-bottom: 18px;
+}
+
+.success-toast {
+  background: var(--green-light);
+  color: var(--green-deep);
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  animation: fadeInScale 0.4s ease;
+}
+
+@keyframes fadeInScale {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.dua-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--green-deep);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  background: var(--bg-ivory);
+  border: 1.5px solid rgba(13, 107, 75, 0.15);
+  border-radius: var(--radius-sm);
+  color: var(--text-heading);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--green-deep);
+  box-shadow: 0 0 0 3px rgba(13, 107, 75, 0.08);
+}
+
+.dua-submit-btn {
+  width: 100%;
+  margin-top: 4px;
+}
+
+/* Wall */
+.dua-wall-card {
+  text-align: left;
+}
+
+.dua-wall-list {
+  max-height: 320px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-right: 4px;
+}
+
+.dua-wall-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.dua-wall-list::-webkit-scrollbar-thumb {
+  background: var(--gold-light);
+  border-radius: 10px;
+}
+
+.dua-item {
+  background: var(--bg-ivory);
+  border-left: 3px solid var(--green-deep);
+  padding: 12px 14px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.dua-author {
+  display: block;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--green-deep);
+  margin-bottom: 4px;
+}
+
+.dua-text {
+  font-size: 0.85rem;
+  color: var(--text-body);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .dua-layout {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .dua-form-card,
+  .dua-wall-card {
+    flex: 1;
+  }
+}

@@ -1,0 +1,116 @@
+.events-section {
+  background: var(--bg-ivory);
+}
+
+.events-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.event-card {
+  text-align: left;
+}
+
+.event-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.event-icon--nikah {
+  background: var(--green-light);
+}
+
+.event-icon--walima {
+  background: var(--gold-soft);
+}
+
+.event-icon-emoji {
+  font-size: 1.4rem;
+}
+
+.event-name {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--text-heading);
+  margin-bottom: 16px;
+}
+
+.event-info-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.event-info-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.info-icon {
+  font-size: 1.1rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.event-info-list li strong {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.event-info-list li span {
+  font-size: 0.92rem;
+  color: var(--text-heading);
+  font-weight: 500;
+}
+
+/* Map Card */
+.map-card {
+  text-align: center;
+  border-color: var(--green-deep);
+  border-width: 1.5px;
+  padding: 32px 24px;
+}
+
+.map-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--text-heading);
+  margin-bottom: 6px;
+}
+
+.map-address {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--green-deep);
+  margin-bottom: 8px;
+}
+
+.map-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .events-stack {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .event-card {
+    flex: 1;
+  }
+}
