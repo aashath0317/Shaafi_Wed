@@ -11,14 +11,22 @@ export default function HeroSection() {
           <p className="bismillah-en">In the name of Allah, the Most Gracious, the Most Merciful</p>
         </div>
 
-        {/* Invitation Lead — moved above image */}
-        <div className="hero-lead fade-up delay-1">
+        {/* Couple Image with Floral Frame */}
+        <div className="hero-couple fade-up delay-1">
+          <div className="floral-frame">
+            <img src="/flowers.png" alt="" className="flowers-bg" aria-hidden="true" />
+            <img src="/couple.png" alt="Wedding couple" className="couple-img" />
+          </div>
+        </div>
+
+        {/* Invitation Lead */}
+        <div className="hero-lead fade-up delay-2">
           <span className="lead-label">Together with their families</span>
           <h2 className="lead-heading">Request the honour of your presence at the wedding celebration of</h2>
         </div>
 
         {/* Couple Names */}
-        <div className="hero-names fade-up delay-2">
+        <div className="hero-names fade-up delay-3">
           <div className="name-card">
             <span className="role-label">The Groom</span>
             <h1 className="couple-name">Munafar Mohamed Shaafi</h1>
@@ -36,15 +44,6 @@ export default function HeroSection() {
             <h1 className="couple-name">Sithik Fathima</h1>
           </div>
         </div>
-
-        {/* Couple Image with Floral Frame — moved below names */}
-        <div className="hero-couple fade-up delay-3">
-          <div className="floral-frame">
-            <img src="/flowers.png" alt="" className="flowers-bg" aria-hidden="true" />
-            <img src="/couple.png" alt="Wedding couple" className="couple-img" />
-          </div>
-        </div>
-
       </div>
     </section>
   );
