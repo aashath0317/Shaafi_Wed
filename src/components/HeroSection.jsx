@@ -13,7 +13,11 @@ export default function HeroSection() {
 
         {/* Calligraphy Names */}
         <div className="hero-calligraphy fade-up delay-1">
-          <h1 className="calligraphy-text">Shaafi <span>&</span> Fathima</h1>
+          <h1 className="calligraphy-text calligraphy-stacked">
+            <span className="cal-name">Shaafi</span>
+            <span className="cal-amp">&</span>
+            <span className="cal-name">Fathima</span>
+          </h1>
         </div>
 
         {/* Couple Image with Floral Frame */}

@@ -31,18 +31,29 @@
 
 .calligraphy-text {
   font-family: var(--font-calligraphy);
-  font-size: 3.5rem;
   color: var(--text-heading);
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
-.calligraphy-text span {
+.calligraphy-stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.cal-name {
+  font-size: 4.2rem;
+  padding: 0 10px;
+}
+
+.cal-amp {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--gold);
-  margin: 0 10px;
   font-style: italic;
+  margin: -15px 0 -10px 0; /* Tighten up spacing between names */
 }
 
 /* Couple Image with Floral Frame */
