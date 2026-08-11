@@ -93,6 +93,7 @@
   height: auto;
   z-index: 2;
   pointer-events: none;
+  animation: floatSlow 8s ease-in-out infinite;
 }
 
 /* Lead */

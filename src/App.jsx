@@ -5,6 +5,7 @@ import QuranVerse from './components/QuranVerse';
 import EventDetails from './components/EventDetails';
 import DuaSection from './components/DuaSection';
 import Footer from './components/Footer';
+import FloatingPetals from './components/FloatingPetals';
 import './App.css';
 
 export default function App() {
@@ -48,6 +49,7 @@ export default function App() {
         ref={mainRef}
         className={`main-wrapper ${showSplash ? 'main-hidden' : 'main-visible'}`}
       >
+        <FloatingPetals />
         <HeroSection />
         <QuranVerse />
         <EventDetails />
