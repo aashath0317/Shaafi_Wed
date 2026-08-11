@@ -80,6 +80,7 @@
   position: relative;
   z-index: 1;
   margin-bottom: 20px;
+  mix-blend-mode: multiply; /* Removes white background */
 }
 
 .flowers-bg {
