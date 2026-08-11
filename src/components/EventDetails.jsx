@@ -87,7 +87,7 @@ export default function EventDetails() {
                 </span>
                 <div>
                   <strong>Venue</strong>
-                  <span>432, Kayar Road, Eravur 2A</span>
+                  <span>Bride Home</span>
                 </div>
               </li>
             </ul>
@@ -139,7 +139,7 @@ export default function EventDetails() {
                 </span>
                 <div>
                   <strong>Venue</strong>
-                  <span>432, Kayar Road, Eravur 2A</span>
+                  <span>Groom Home</span>
                 </div>
               </li>
             </ul>
