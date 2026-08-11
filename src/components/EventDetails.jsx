@@ -165,7 +165,7 @@ export default function EventDetails() {
           <p className="map-address">Bride Home</p>
           <p className="map-desc">Your presence will be a blessing for us. Tap below for live directions.</p>
           <a
-            href="https://maps.app.goo.gl/GTxPKyRfq3QTuwfX9"
+            href="https://www.google.com/maps/search/?api=1&query=7.793894488759414,81.61647486195118"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
