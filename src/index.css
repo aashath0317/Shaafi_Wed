@@ -268,11 +268,11 @@ body {
   50% { transform: translateY(-8px); }
 }
 
-/* Float Slow */
+/* Float Slow — includes translateX(-50%) so centered elements stay centered */
 @keyframes floatSlow {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  33% { transform: translate(4px, -10px) rotate(2deg); }
-  66% { transform: translate(-4px, -5px) rotate(-1deg); }
+  0%, 100% { transform: translateX(-50%) translate(0, 0) rotate(0deg); }
+  33% { transform: translateX(-50%) translate(4px, -10px) rotate(2deg); }
+  66% { transform: translateX(-50%) translate(-4px, -5px) rotate(-1deg); }
 }
 
 /* Sparkle twinkle */
