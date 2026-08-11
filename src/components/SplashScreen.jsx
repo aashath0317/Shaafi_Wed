@@ -34,10 +34,10 @@ export default function SplashScreen({ onOpen, audioRef }) {
       <video
         ref={videoRef}
         className="intro-video"
-        src="/intro.mp4"
+        src="/intro.mp4#t=0.001"
         playsInline
         muted
-        preload="auto"
+        preload="metadata"
         onEnded={handleVideoEnd}
       />
     </div>
