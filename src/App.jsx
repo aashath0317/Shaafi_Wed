@@ -11,6 +11,7 @@ import './App.css';
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
   const mainRef = useRef(null);
+  const audioRef = useRef(null);
 
   // Intersection Observer for scroll fade-up animations
   useEffect(() => {
@@ -39,7 +40,10 @@ export default function App() {
 
   return (
     <>
-      {showSplash && <SplashScreen onOpen={handleOpen} />}
+      {/* Background nasheed — lives in App so it persists after splash */}
+      <audio ref={audioRef} src="/nasheed.mp3" loop preload="auto" />
+
+      {showSplash && <SplashScreen onOpen={handleOpen} audioRef={audioRef} />}
 
       <main
         ref={mainRef}
