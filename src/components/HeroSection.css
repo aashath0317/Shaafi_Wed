@@ -84,10 +84,10 @@
 
 .couple-img {
   position: absolute;
-  bottom: 18px;
-  left: 48%;
+  bottom: 25px;
+  left: 54%; /* Centered horizontally inside arch */
   transform: translateX(-50%);
-  width: 78%;
+  width: 76%;
   height: auto;
   z-index: 2;
   mix-blend-mode: multiply;
@@ -95,10 +95,11 @@
 
 .flowers-bg {
   position: absolute;
-  bottom: -12px;
-  right: -10px;
-  width: 65%;
-  max-width: 220px;
+  bottom: -5px;
+  left: 50%; /* Centered at the bottom of the frame */
+  transform: translateX(-50%);
+  width: 85%;
+  max-width: 270px;
   height: auto;
   z-index: 3;
   pointer-events: none;
