@@ -42,15 +42,14 @@ export default function HeroSection() {
           </div>
 
           <div className="names-connector">
-            <svg viewBox="0 0 60 60" className="ring-icon" aria-hidden="true">
-              <circle cx="24" cy="30" r="14" fill="none" stroke="var(--gold)" strokeWidth="2" />
-              <circle cx="36" cy="30" r="14" fill="none" stroke="var(--gold)" strokeWidth="2" />
+            <svg viewBox="0 0 24 24" className="heart-icon" aria-hidden="true">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
             </svg>
           </div>
 
           <div className="name-card">
             <span className="role-label">The Bride</span>
-            <h1 className="couple-name">Sithik Fathima</h1>
+            <h1 className="couple-name">Saliheen Fathima</h1>
           </div>
         </div>
       </div>
