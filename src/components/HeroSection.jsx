@@ -55,8 +55,8 @@ export default function HeroSection() {
 
           <div className="name-card">
             <span className="role-label">The Bride</span>
-            <h1 className="couple-name">Saliheen Fathima</h1>
-            <p className="parent-label">Daughter of Sithik</p>
+            <h1 className="couple-name">Fathima</h1>
+            <p className="parent-label">Daughter of Saliheen</p>
           </div>
         </div>
       </div>
