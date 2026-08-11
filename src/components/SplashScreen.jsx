@@ -30,12 +30,6 @@ export default function SplashScreen({ onOpen, audioRef }) {
   return (
     <div className={`intro-overlay ${leaving ? 'intro--leaving' : ''}`} onClick={handleTap}>
 
-      {!hasStarted && (
-        <div className="tap-prompt">
-          <span>Tap to Open Invitation</span>
-        </div>
-      )}
-
       {/* Intro video — frozen on first frame until tapped */}
       <video
         ref={videoRef}
