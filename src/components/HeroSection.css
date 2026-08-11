@@ -61,52 +61,36 @@
 /* Couple Image with Floral Frame */
 .hero-couple {
   margin: 0 auto;
-  max-width: 340px;
+  max-width: 320px;
 }
 
 .floral-frame {
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 0;
-}
-
-.couple-img {
   width: 100%;
-  max-width: 320px;
-  height: auto;
-  position: relative;
-  z-index: 1;
-  margin-bottom: 30px;
-  margin-left: 20px; /* Shifted right slightly to center visually */
-  mix-blend-mode: multiply;
+  margin: 10px 0;
 }
 
 .frame-bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 380px;
   height: auto;
-  z-index: 0;
+  display: block;
+  position: relative;
+  z-index: 2;
   pointer-events: none;
 }
 
-.flowers-bg {
+.couple-img {
   position: absolute;
-  bottom: 0;
-  left: 42%; /* Shifted left to cover the couple's feet perfectly */
-  transform: translateX(-50%);
+  top: 52%;
+  left: 44%;
+  transform: translate(-50%, -50%) scale(0.72);
   width: 100%;
-  max-width: 280px;
   height: auto;
-  z-index: 2;
-  pointer-events: none;
-  animation: floatSlow 8s ease-in-out infinite;
+  z-index: 1;
+  mix-blend-mode: multiply;
 }
 
 /* Lead */
