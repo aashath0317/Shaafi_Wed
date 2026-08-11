@@ -1,14 +1,15 @@
 import './FloatingPetals.css';
 
 export default function FloatingPetals() {
-  // Generate random petals
-  const petals = Array.from({ length: 20 }).map((_, i) => {
+  const colorPalette = ['var(--pink)', 'var(--gold)', 'var(--green-deep)', '#ffb7c5', '#ffffff'];
+
+  const petals = Array.from({ length: 25 }).map((_, i) => {
     const left = Math.random() * 100;
     const animDuration = 10 + Math.random() * 15;
     const animDelay = Math.random() * 10;
     const scale = 0.5 + Math.random() * 0.8;
-    const opacity = 0.5 + Math.random() * 0.5;
-    const isPink = Math.random() > 0.4;
+    const opacity = 0.2 + Math.random() * 0.4; // Reduced opacity
+    const flowerColor = colorPalette[Math.floor(Math.random() * colorPalette.length)];
 
     return (
       <div
@@ -20,11 +21,12 @@ export default function FloatingPetals() {
           animationDelay: `${animDelay}s`,
           transform: `scale(${scale})`,
           opacity: opacity,
+          color: flowerColor, // Use inline color instead of class
         }}
       >
         <svg 
           viewBox="0 0 512 512" 
-          className={`petal ${isPink ? 'petal-pink' : 'petal-gold'}`}
+          className="petal"
           style={{ animationDuration: `${animDuration * 0.8}s` }}
           fill="currentColor"
         >
