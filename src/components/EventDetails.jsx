@@ -78,7 +78,7 @@ export default function EventDetails() {
                 </span>
                 <div>
                   <strong>Time</strong>
-                  <span>3:30 PM (InshaAllah)</span>
+                  <span>4:00 PM (After Asar Prayer)</span>
                 </div>
               </li>
               <li>
@@ -130,7 +130,7 @@ export default function EventDetails() {
                 </span>
                 <div>
                   <strong>Time</strong>
-                  <span>12:30 PM onwards</span>
+                  <span>12:30 PM (After Luhar Prayer)</span>
                 </div>
               </li>
               <li>
