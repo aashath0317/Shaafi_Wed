@@ -8,7 +8,6 @@ export default function HeroSection() {
         {/* Bismillah */}
         <div className="hero-bismillah fade-up">
           <p className="bismillah-ar">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
-          <p className="bismillah-en">In the name of Allah, the Most Gracious, the Most Merciful</p>
           <p className="bismillah-invite">With immense joy and the blessings of Allah, we cordially invite you to celebrate our wedding.</p>
         </div>
 
