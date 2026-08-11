@@ -9,7 +9,8 @@ export default function Footer() {
           بارَكَ اللهُ لَكُما وَبارَكَ عَلَيْكُما وَجَمَعَ بَيْنَكُما فِي خَيْرٍ
         </p>
         <p className="footer-dua-en">
-          "அல்லாஹ் உங்கள் இருவரையும் ஆசீர்வதித்து, உங்கள் மீது தன் பரக்கத்தைப் பொழிந்து, உங்களை நன்மையில் ஒன்றுசேர்ப்பானாக!"
+          "May Allah bless you, and shower His blessings upon you,
+          and join you together in goodness."
         </p>
 
 

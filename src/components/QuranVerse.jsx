@@ -21,10 +21,11 @@ export default function QuranVerse() {
           </div>
 
           <p className="quran-english">
-            "உங்களுக்கிடையே அமைதியும், அளப்பரிய அன்பும், கருணையும் நிலவுவதற்காக, உங்கிருந்தே உங்களுக்கான நல்வாழ்க்கைத் துணையை அவன் படைத்திருப்பதும் அவனது பேரருள் சான்றுகளில் ஒன்றாகும்."
+            "And among His Signs is this, that He created for you mates from among yourselves,
+            that you may dwell in tranquility with them, and He has put love and mercy between your hearts."
           </p>
 
-          <span className="quran-ref">— சூரா அர்-ரூம் [30:21] —</span>
+          <span className="quran-ref">— Surah Ar-Rum [30:21] —</span>
 
           {/* Bottom corner ornaments */}
           <span className="quran-corner quran-corner-bl" aria-hidden="true">❦</span>
