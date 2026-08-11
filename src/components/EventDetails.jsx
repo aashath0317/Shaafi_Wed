@@ -162,8 +162,8 @@ export default function EventDetails() {
         {/* Map Card */}
         <div className="map-card card fade-up delay-3">
           <h3 className="map-title">Wedding Location</h3>
-          <p className="map-address">432, Kayar Road, Eravur 2A</p>
-          <p className="map-desc">We look forward to welcoming you. Tap below for live directions.</p>
+          <p className="map-address">Bride Home</p>
+          <p className="map-desc">Your presence will be a blessing for us. Tap below for live directions.</p>
           <a
             href="https://maps.google.com/?q=432,+Kayar+Road,+Eravur+2A"
             target="_blank"
