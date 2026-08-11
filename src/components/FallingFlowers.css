@@ -1,0 +1,47 @@
+.falling-flowers-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Let clicks pass through */
+  z-index: 9999; /* Stay on top of everything */
+  overflow: hidden;
+}
+
+.petal {
+  position: absolute;
+  top: -10%; /* Start slightly above the screen */
+  color: var(--pink); /* Use the pink color from theme */
+  opacity: 0.7;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.petal svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));
+}
+
+@keyframes fall {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(20px, 50vh) rotate(180deg);
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-20px, 110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
