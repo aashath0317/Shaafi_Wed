@@ -77,8 +77,8 @@ export default function SplashScreen({ onOpen }) {
               <p className="door-label-left">Wedding</p>
 
               {/* Groom name */}
-              <h2 className="door-name-left">Sithik</h2>
-              <h2 className="door-name-left door-name--sub">Fathima</h2>
+              <h2 className="door-name-left">Munafar</h2>
+              <h2 className="door-name-left door-name--sub">Mohamed Shaafi</h2>
 
               {/* Bottom flourish */}
               <svg className="door-flourish" viewBox="0 0 60 20" aria-hidden="true">
@@ -128,8 +128,8 @@ export default function SplashScreen({ onOpen }) {
               <p className="door-label-right">Invitation</p>
 
               {/* Bride name */}
-              <h2 className="door-name-right">Munafar</h2>
-              <h2 className="door-name-right door-name--sub">Mohamed Shaafi</h2>
+              <h2 className="door-name-right">Sithik</h2>
+              <h2 className="door-name-right door-name--sub">Fathima</h2>
 
               {/* Bottom flourish */}
               <svg className="door-flourish door-flourish--right" viewBox="0 0 60 20" aria-hidden="true">

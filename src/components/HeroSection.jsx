@@ -29,7 +29,7 @@ export default function HeroSection() {
         <div className="hero-names fade-up delay-3">
           <div className="name-card">
             <span className="role-label">The Groom</span>
-            <h1 className="couple-name">Sithik Fathima</h1>
+            <h1 className="couple-name">Munafar Mohamed Shaafi</h1>
           </div>
 
           <div className="names-connector">
@@ -41,7 +41,7 @@ export default function HeroSection() {
 
           <div className="name-card">
             <span className="role-label">The Bride</span>
-            <h1 className="couple-name">Munafar Mohamed Shaafi</h1>
+            <h1 className="couple-name">Sithik Fathima</h1>
           </div>
         </div>
       </div>

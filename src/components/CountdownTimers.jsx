@@ -62,7 +62,7 @@ export default function CountdownTimers() {
             <p className="cd-date">Sunday, 16th August 2026 • 3:30 PM</p>
             <TimerDisplay time={nikahTime} />
             <a
-              href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Nikah+Ceremony+Sithik+%26+Shaafi&dates=20260816T100000Z/20260816T123000Z&details=Nikah+ceremony+of+Sithik+Fathima+and+Munafar+Mohamed+Shaafi.&location=432,+Kayar+Road,+Eravur+2A"
+              href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Nikah+Ceremony+Shaafi+%26+Sithik&dates=20260816T100000Z/20260816T123000Z&details=Nikah+ceremony+of+Munafar+Mohamed+Shaafi+and+Sithik+Fathima.&location=432,+Kayar+Road,+Eravur+2A"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline cd-calendar-btn"
@@ -80,7 +80,7 @@ export default function CountdownTimers() {
             <p className="cd-date">Tuesday, 18th August 2026 • 12:30 PM</p>
             <TimerDisplay time={walimaTime} />
             <a
-              href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Walima+Reception+Sithik+%26+Shaafi&dates=20260818T070000Z/20260818T100000Z&details=Walima+reception+of+Sithik+Fathima+and+Munafar+Mohamed+Shaafi.&location=432,+Kayar+Road,+Eravur+2A"
+              href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Walima+Reception+Shaafi+%26+Sithik&dates=20260818T070000Z/20260818T100000Z&details=Walima+reception+of+Munafar+Mohamed+Shaafi+and+Sithik+Fathima.&location=432,+Kayar+Road,+Eravur+2A"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline cd-calendar-btn"
