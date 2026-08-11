@@ -35,6 +35,7 @@ export default function App() {
   }, [showSplash]);
 
   const handleOpen = () => {
+    window.scrollTo(0, 0);
     setShowSplash(false);
   };
 
