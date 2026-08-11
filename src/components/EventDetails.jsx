@@ -1,6 +1,49 @@
+import { useState, useEffect } from 'react';
 import './EventDetails.css';
 
+const NIKAH_DATE = new Date('2026-08-16T15:30:00+05:30');
+const WALIMA_DATE = new Date('2026-08-18T12:30:00+05:30');
+
+function calcTimeLeft(target) {
+  const diff = target - new Date();
+  if (diff <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+  return {
+    days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+    hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
+    minutes: Math.floor((diff / (1000 * 60)) % 60),
+    seconds: Math.floor((diff / 1000) % 60),
+  };
+}
+
+function pad(n) {
+  return String(n).padStart(2, '0');
+}
+
+function TimerDisplay({ time }) {
+  return (
+    <div className="timer-grid">
+      {['days', 'hours', 'minutes', 'seconds'].map((unit) => (
+        <div className={`timer-cell ${unit === 'seconds' ? 'timer-cell--active' : ''}`} key={unit}>
+          <span className="timer-num">{pad(time[unit])}</span>
+          <span className="timer-label">{unit}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default function EventDetails() {
+  const [nikahTime, setNikahTime] = useState(calcTimeLeft(NIKAH_DATE));
+  const [walimaTime, setWalimaTime] = useState(calcTimeLeft(WALIMA_DATE));
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setNikahTime(calcTimeLeft(NIKAH_DATE));
+      setWalimaTime(calcTimeLeft(WALIMA_DATE));
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="events-section section-padding" id="events">
       <div className="container text-center">
@@ -18,6 +61,7 @@ export default function EventDetails() {
               </svg>
             </div>
             <h3 className="event-name">Nikah Ceremony</h3>
+            
             <ul className="event-info-list">
               <li>
                 <span className="info-icon">
@@ -47,6 +91,18 @@ export default function EventDetails() {
                 </div>
               </li>
             </ul>
+
+            <div className="event-countdown">
+              <TimerDisplay time={nikahTime} />
+              <a
+                href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Nikah+Ceremony+Shaafi+%26+Saliheen&dates=20260816T100000Z/20260816T123000Z&details=Nikah+ceremony+of+Munafar+Mohamed+Shaafi+and+Saliheen+Fathima.&location=432,+Kayar+Road,+Eravur+2A"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline cd-calendar-btn"
+              >
+                Add to Calendar
+              </a>
+            </div>
           </div>
 
           {/* Walima */}
@@ -57,6 +113,7 @@ export default function EventDetails() {
               </svg>
             </div>
             <h3 className="event-name">Walima Banquet</h3>
+            
             <ul className="event-info-list">
               <li>
                 <span className="info-icon">
@@ -86,6 +143,18 @@ export default function EventDetails() {
                 </div>
               </li>
             </ul>
+
+            <div className="event-countdown">
+              <TimerDisplay time={walimaTime} />
+              <a
+                href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Walima+Reception+Shaafi+%26+Saliheen&dates=20260818T070000Z/20260818T100000Z&details=Walima+reception+of+Munafar+Mohamed+Shaafi+and+Saliheen+Fathima.&location=432,+Kayar+Road,+Eravur+2A"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline cd-calendar-btn"
+              >
+                Add to Calendar
+              </a>
+            </div>
           </div>
 
         </div>

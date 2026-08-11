@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from 'react';
 import SplashScreen from './components/SplashScreen';
 import HeroSection from './components/HeroSection';
 import QuranVerse from './components/QuranVerse';
-import CountdownTimers from './components/CountdownTimers';
 import EventDetails from './components/EventDetails';
 import DuaSection from './components/DuaSection';
 import Footer from './components/Footer';
@@ -51,7 +50,6 @@ export default function App() {
       >
         <HeroSection />
         <QuranVerse />
-        <CountdownTimers />
         <EventDetails />
         <DuaSection />
         <Footer />

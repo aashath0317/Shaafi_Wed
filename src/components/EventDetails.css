@@ -114,3 +114,61 @@
     flex: 1;
   }
 }
+
+/* Event Countdown Area */
+.event-countdown {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px dashed rgba(197, 151, 62, 0.3);
+  text-align: center;
+}
+
+/* Timer Grid */
+.timer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: 0 auto 16px;
+}
+
+.timer-cell {
+  background: var(--green-mist);
+  border: 1px solid rgba(13, 107, 75, 0.1);
+  border-radius: var(--radius-sm);
+  padding: 10px 4px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-cell--active {
+  background: var(--green-light);
+  border-color: var(--green-deep);
+}
+
+.timer-num {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--green-deep);
+  line-height: 1.1;
+}
+
+.timer-cell--active .timer-num {
+  color: var(--green-deep);
+}
+
+.timer-label {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.cd-calendar-btn {
+  font-size: 0.8rem;
+  padding: 8px 16px;
+  width: 100%;
+}
