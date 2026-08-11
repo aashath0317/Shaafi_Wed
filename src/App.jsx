@@ -34,6 +34,17 @@ export default function App() {
     return () => observer.disconnect();
   }, [showSplash]);
 
+  // Auto-scroll a bit after entering
+  useEffect(() => {
+    if (!showSplash) {
+      const scrollTimer = setTimeout(() => {
+        // Scroll down by 25vh (25% of viewport height) to hint at more content
+        window.scrollBy({ top: window.innerHeight * 0.25, behavior: 'smooth' });
+      }, 2000);
+      return () => clearTimeout(scrollTimer);
+    }
+  }, [showSplash]);
+
   const handleOpen = () => {
     window.scrollTo(0, 0);
     setShowSplash(false);

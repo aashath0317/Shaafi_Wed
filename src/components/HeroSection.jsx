@@ -23,7 +23,6 @@ export default function HeroSection() {
         {/* Couple Image with Floral Frame */}
         <div className="hero-couple fade-up delay-2">
           <div className="floral-frame">
-            <div className="light-flare" aria-hidden="true"></div>
             <img src="/frame.png" alt="" className="frame-bg" aria-hidden="true" />
             <img src="/couple.png" alt="Wedding couple" className="couple-img" />
             <img src="/flowers.png" alt="" className="flowers-bg" aria-hidden="true" />
