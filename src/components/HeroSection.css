@@ -95,11 +95,11 @@
 
 .flowers-bg {
   position: absolute;
-  bottom: -5px;
-  left: 50%; /* Centered at the bottom of the frame */
+  bottom: 0px;
+  left: 38%; /* Shifted left so leaves span to the left arch corner and flowers center */
   transform: translateX(-50%);
-  width: 85%;
-  max-width: 270px;
+  width: 90%;
+  max-width: 290px;
   height: auto;
   z-index: 3;
   pointer-events: none;
