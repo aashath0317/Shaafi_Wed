@@ -167,13 +167,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 12px;
+  margin: 8px 0;
 }
 
 .heart-icon {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   fill: var(--gold);
   animation: softPulse 2s ease-in-out infinite;
+}
+
+.weds-text {
+  font-family: var(--font-calligraphy);
+  font-size: 2rem;
+  color: var(--gold);
+  text-transform: lowercase;
 }
 
 @media (max-width: 375px) {
