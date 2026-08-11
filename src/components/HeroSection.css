@@ -83,6 +83,27 @@
   overflow: visible;
 }
 
+.light-flare {
+  position: absolute;
+  bottom: 80%; /* Start inside the frame and shoot upwards */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 250px;
+  /* Conical light beam effect pointing up */
+  background: radial-gradient(ellipse at bottom, rgba(230, 185, 128, 0.8) 0%, rgba(230, 185, 128, 0) 70%);
+  clip-path: polygon(10% 0%, 90% 0%, 55% 100%, 45% 100%);
+  pointer-events: none;
+  z-index: 0;
+  mix-blend-mode: screen;
+  animation: flarePulse 3s infinite alternate ease-in-out;
+}
+
+@keyframes flarePulse {
+  0% { opacity: 0.5; transform: translateX(-50%) scaleY(1); }
+  100% { opacity: 1; transform: translateX(-50%) scaleY(1.1); }
+}
+
 .frame-bg {
   width: 100%;
   height: auto;
