@@ -95,7 +95,7 @@ export default function EventDetails() {
             <div className="event-countdown">
               <TimerDisplay time={nikahTime} />
               <a
-                href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Nikah+Ceremony+Shaafi+%26+Saliheen&dates=20260816T100000Z/20260816T123000Z&details=Nikah+ceremony+of+Munafar+Mohamed+Shaafi+and+Saliheen+Fathima.&location=432,+Kayar+Road,+Eravur+2A"
+                href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Nikah+Ceremony+Shaafi+%26+Fathima&dates=20260816T100000Z/20260816T123000Z&details=Nikah+ceremony+of+Mohamed+Shaafi+and+Fathima.&location=7.793894488759414,81.61647486195118"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-outline cd-calendar-btn"
@@ -165,7 +165,7 @@ export default function EventDetails() {
           <p className="map-address">Bride Home</p>
           <p className="map-desc">Your presence will be a blessing for us. Tap below for live directions.</p>
           <a
-            href="https://maps.google.com/?q=432,+Kayar+Road,+Eravur+2A"
+            href="https://maps.app.goo.gl/GTxPKyRfq3QTuwfX9"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
