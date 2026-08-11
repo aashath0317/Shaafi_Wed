@@ -3,7 +3,7 @@
    Palette: Emerald Green, Antique Gold & Ivory
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap');
 
 :root {
   /* Greens */
@@ -39,6 +39,7 @@
   --font-arabic: 'Amiri', serif;
   --font-display: 'Cormorant Garamond', serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-calligraphy: 'Great Vibes', cursive;
 
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(26, 60, 42, 0.06);

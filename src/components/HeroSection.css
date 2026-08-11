@@ -24,6 +24,27 @@
   color: var(--text-muted);
 }
 
+/* Calligraphy Names */
+.hero-calligraphy {
+  margin: 10px 0 20px;
+}
+
+.calligraphy-text {
+  font-family: var(--font-calligraphy);
+  font-size: 3.5rem;
+  color: var(--text-heading);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.calligraphy-text span {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--gold);
+  margin: 0 10px;
+  font-style: italic;
+}
+
 /* Couple Image with Floral Frame */
 .hero-couple {
   margin: 15px auto 0;
