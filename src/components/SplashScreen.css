@@ -28,3 +28,23 @@
   z-index: 1;
 }
 
+.tap-prompt {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  font-family: var(--font-display, serif);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-align: center;
+  animation: pulsePrompt 2s infinite;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+@keyframes pulsePrompt {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
