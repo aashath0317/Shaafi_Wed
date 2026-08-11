@@ -78,18 +78,18 @@
   height: auto;
   display: block;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   pointer-events: none;
 }
 
 .couple-img {
   position: absolute;
-  top: 52%;
-  left: 44%;
-  transform: translate(-50%, -50%) scale(0.72);
-  width: 100%;
+  bottom: 10px;
+  left: 48%;
+  transform: translateX(-50%);
+  width: 80%;
   height: auto;
-  z-index: 1;
+  z-index: 2;
   mix-blend-mode: multiply;
 }
 
