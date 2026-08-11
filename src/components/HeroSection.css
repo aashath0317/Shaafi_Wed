@@ -73,11 +73,11 @@
 
 .couple-img {
   width: 100%;
-  max-width: 260px;
+  max-width: 320px; /* Made bigger */
   height: auto;
   position: relative;
   z-index: 1;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .flowers-bg {
@@ -85,8 +85,8 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 120%;
-  max-width: 360px;
+  width: 100%; /* Changed from 120% */
+  max-width: 280px; /* Made smaller */
   height: auto;
   z-index: 2;
   pointer-events: none;
