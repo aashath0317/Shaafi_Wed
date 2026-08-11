@@ -40,6 +40,7 @@ export default function HeroSection() {
           <div className="name-card">
             <span className="role-label">The Groom</span>
             <h1 className="couple-name">Mohamed Shaafi</h1>
+            <p className="edu-label">BET Hons.</p>
             <p className="parent-label">Son of Munafar</p>
           </div>
 
@@ -55,7 +56,7 @@ export default function HeroSection() {
 
           <div className="name-card">
             <span className="role-label">The Bride</span>
-            <h1 className="couple-name">Fathima</h1>
+            <h1 className="couple-name" style={{ fontSize: '1.5rem' }}>Al. Aalima Fathima Faiziyya</h1>
             <p className="parent-label">Daughter of Saliheen</p>
           </div>
         </div>
