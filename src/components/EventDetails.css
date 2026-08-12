@@ -23,6 +23,10 @@
   margin-bottom: 16px;
 }
 
+.event-icon--mehandi {
+  background: var(--rose-soft);
+}
+
 .event-icon--nikah {
   background: var(--green-light);
 }
