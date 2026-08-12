@@ -39,17 +39,25 @@ export default function EventDetails() {
   const [walimaTime, setWalimaTime] = useState(calcTimeLeft(WALIMA_DATE));
 
   const path = window.location.pathname.toLowerCase().replace(/\/$/, "");
+  const knownPaths = ['', '/all', '/mehndi-nikkah', '/nikkah-valimah', '/nikkah'];
+
+  // Redirect unknown URLs to home
+  if (!knownPaths.includes(path)) {
+    window.location.replace('/');
+    return null;
+  }
+
   let showMehandi = true;
   let showNikah = true;
   let showWalima = true;
 
   if (path === '/mehndi-nikkah') {
     showWalima = false;
-  } else if (path === '/wedding' || path === '/valimah') {
-    showMehandi = false;
-    showNikah = false;
   } else if (path === '/nikkah-valimah') {
     showMehandi = false;
+  } else if (path === '/nikkah') {
+    showMehandi = false;
+    showWalima = false;
   }
 
   const visibleEvents = [];
